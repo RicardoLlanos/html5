@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Irma eres el CSS de mi HTML</title>
+	<meta name="description" content="En este día del amor y la amistad, quiero decirte cuanto te amo de la mejor forma en que lo se hacer... CODEANDO <3" />
+	<style>
+		@import url(http://fonts.googleapis.com/css?family=Miniver);
+
+		@-ms-keyframes latido
+		{
+			0% /* from */
+			{
+				-ms-transform: scale(.5,.5) rotate(0deg);
+			}
+
+			25%
+			{
+				-ms-transform: scale(1,1) rotate(15deg);
+			}
+
+			50%
+			{
+				-ms-transform: scale(2,2) rotate(0deg);
+			}
+
+			75%
+			{
+				-ms-transform: scale(3,3) rotate(-15deg);
+			}
+
+			100% /* to */
+			{
+				-ms-transform: scale(4,4) rotate(0deg);
+			}
+		}
+
+		@-moz-keyframes latido
+		{
+			0% /* from */
+			{
+				-moz-transform: scale(.5,.5) rotate(0deg);
+			}
+
+			25%
+			{
+				-moz-transform: scale(1,1) rotate(15deg);
+			}
+
+			50%
+			{
+				-moz-transform: scale(2,2) rotate(0deg);
+			}
+
+			75%
+			{
+				-moz-transform: scale(3,3) rotate(-15deg);
+			}
+
+			100% /* to */
+			{
+				-moz-transform: scale(4,4) rotate(0deg);
+			}
+		}
+
+		@-o-keyframes latido
+		{
+			0% /* from */
+			{
+				-o-transform: scale(.5,.5) rotate(0deg);
+			}
+
+			25%
+			{
+				-o-transform: scale(1,1) rotate(15deg);
+			}
+
+			50%
+			{
+				-o-transform: scale(2,2) rotate(0deg);
+			}
+
+			75%
+			{
+				-o-transform: scale(3,3) rotate(-15deg);
+			}
+
+			100% /* to */
+			{
+				-o-transform: scale(4,4) rotate(0deg);
+			}
+		}
+
+		@-webkit-keyframes latido
+		{
+			0% /* from */
+			{
+				-webkit-transform: scale(.5,.5) rotate(0deg);
+			}
+
+			25%
+			{
+				-webkit-transform: scale(1,1) rotate(15deg);
+			}
+
+			50%
+			{
+				-webkit-transform: scale(2,2) rotate(0deg);
+			}
+
+			75%
+			{
+				-webkit-transform: scale(3,3) rotate(-15deg);
+			}
+
+			100% /* to */
+			{
+				-webkit-transform: scale(4,4) rotate(0deg);
+			}
+		}
+
+		@keyframes latido
+		{
+			0% /* from */
+			{
+				transform: scale(.5,.5) rotate(0deg);
+			}
+
+			25%
+			{
+				transform: scale(1,1) rotate(15deg);
+			}
+
+			50%
+			{
+				transform: scale(2,2) rotate(0deg);
+			}
+
+			75%
+			{
+				transform: scale(3,3) rotate(-15deg);
+			}
+
+			100% /* to */
+			{
+				transform: scale(4,4) rotate(0deg);
+			}
+		}
+
+		body
+		{
+			background: pink;
+			background-image: -ms-radial-gradient(center 45deg,circle cover,pink,crimson);
+			background-image: -moz-radial-gradient(center 45deg,circle cover,pink,crimson);
+			background-image: -o-radial-gradient(center 45deg,circle cover,pink,crimson);
+			background-image: -webkit-gradient(radial,50% 50%,0,50% 50%,800,from(pink),to(crimson));
+			background-image: radial-gradient(center 45deg,circle cover,pink,crimson);
+			font-family: 'Miniver', cursive;
+			font-size: 16px;
+			text-align: center;
+		}
+
+		h1
+		{
+			-ms-animation: latido 1s infinite 1s alternate ease;
+			-ms-animation-play-state: running;
+			-moz-animation: latido 1s infinite 1s alternate ease;
+			-moz-animation-play-state: running;
+			-o-animation: latido 1s infinite 1s alternate ease;
+			-o-animation-play-state: running;
+			-webkit-animation: latido 1s infinite 1s alternate ease;
+			-webkit-animation-play-state: running;
+			animation: latido 1s infinite 1s alternate ease;
+			animation-play-state: running;
+			font-size: 2em;
+			left: 48%;
+			position: fixed;
+			text-shadow: .1em .1em .5em rgba(255,255,255,.8);
+			top: 48%;
+			z-index: 2;
+		}
+
+		h2
+		{
+			font-size: 3em;
+			position: relative;
+			text-shadow: .1em .1em .5em rgba(255,0,0,.5);
+			z-index: 3;
+		}
+
+		#corazon
+		{
+			/*
+			animation: nombre duracion numVeces retardo dirección tipoAceleracion
+			Dirección: normal, alternate
+			Tipos de aceleracion : ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n) donde n va de 0 a 1
+			Estado de la animación: running o paused
+			*/
+			-ms-animation: latido 2s infinite 1s alternate ease;
+			-ms-animation-play-state: running;
+			-moz-animation: latido 2s infinite 1s alternate ease;
+			-moz-animation-play-state: running;
+			-o-animation: latido 2s infinite 1s alternate ease;
+			-o-animation-play-state: running;
+			-webkit-animation: latido 2s infinite 1s alternate ease;
+			-webkit-animation-play-state: running;
+			animation: latido 2s infinite 1s alternate ease;
+			animation-play-state: running;
+			left: 43%;
+			height: 180px;
+			position: fixed;
+			top: 45%;
+			width: 200px;
+			z-index: 1;
+		}
+
+		#corazon:after, #corazon:before
+		{
+			background: red;
+			border-radius: 50px 50px 0 0;
+			box-shadow: .1em .1em .5em rgba(255,0,0,.8);
+			content: "";
+			height: 160px;
+			left: 100px;
+			position: absolute;
+			-ms-transform: rotate(-45deg);
+			-ms-transform-origin: 0 100%;
+			-moz-transform: rotate(-45deg);
+			-moz-transform-origin: 0 100%;
+			-o-transform: rotate(-45deg);
+			-o-transform-origin: 0 100%;
+			-webkit-transform: rotate(-45deg);
+			-webkit-transform-origin: 0 100%;
+			transform: rotate(-45deg);
+			transform-origin: 0 100%;
+			width: 100px;
+		}
+
+		#corazon:after
+		{
+			left: 0;
+			-ms-transform: rotate(45deg);
+			-ms-transform-origin: 100% 100%;
+			-moz-transform: rotate(45deg);
+			-moz-transform-origin: 100% 100%;
+			-o-transform: rotate(45deg);
+			-o-transform-origin: 100% 100%;
+			-webkit-transform: rotate(45deg);
+			-webkit-transform-origin: 100% 100%;
+			-transform: rotate(45deg);
+			-transform-origin: 100% 100%;
+		}
+	</style>
+</head>
+<body>
+	<h2>Eres el CSS de mi HTML</h2>
+	<h1>Irma</h1>
+	<div id="corazon"></div>
+</body>
+</html>

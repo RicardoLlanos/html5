@@ -1,0 +1,45 @@
+http://www.creativasfera.com/saca-el-maximo-partido-de-sublime-text-v2-con-este-tutorial
+
+SublimeText
+	Menú proyecto
+	Menu View-layouts
+	Colores
+	ctrl + tab 
+	ctrl + o
+	ctrl + s
+	ctrl + w
+	ctrl + f
+	ctrl + h
+	ctrl + shift + d duplicar linea
+	ctrl + }
+	ctrl + shift + }
+	ctrl + arriba y abajo - scroll pivotendo cursor
+	ctrl + shift + arriba y abajo - mover linea
+	alt + izq y der saltar entre espacios
+	ctrl + ' indentacion +
+	ctrl + ¿ indentacion -
+	Ctrl+F2 puntero
+	F2 navegar entre punteros
+	Ctrl + Shift + F2: Borrar todos los punteros
+	F11
+	shift + F11
+	ctrl ++ y ctrl --
+	ctrl p
+	ctrl shift p
+	ctrl g
+	ctrl r
+	ctrl shift p snippet
+	ctrl clic
+	html
+	p#id
+	p.class
+	lorem
+	preferences->settings user 
+	preferences->settings default
+	preferences->keybinding user
+	preferences->keybinding default
+	ctrl shif p Package Control: Discover Packages 
+		http://wbond.net/sublime_packages/community
+	
+	view show console
+		import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'

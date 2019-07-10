@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Submenús con CSS</title>
+	<style>
+		html {
+			font-size: 16px;
+			font-family: sans-serif;
+		}
+
+		.menu {
+			background-color: #000;
+			color: greenyellow;
+			padding: 1rem;
+			display: inline;
+		}
+
+		.menu > li {
+			position: relative;
+			display: inline;
+			padding: 1rem;
+			list-style-type: none;
+			transition: all .25s ease-out;
+		}
+
+		.menu > li:hover {
+			background-color: greenyellow;
+			color: #000;
+			cursor: pointer;
+		}
+
+		.submenu {
+			position: absolute;
+			top: 3rem;
+			left: 1rem;
+			/* display: none; */
+			padding: 1rem;
+			list-style-type: none;
+			background-color: #000;
+			color: greenyellow;
+			visibility: hidden;
+			transition: all 1s ease-out;
+			opacity: 0;
+		}
+
+
+		.menu > li:hover > .submenu {
+			/* display: block; */
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.submenu > li {
+			padding: 1rem;
+			transition: all .25s ease-out;
+		}
+
+		.submenu > li:hover {
+			background-color: greenyellow;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Submenús con CSS</h1>
+	<h2>Meses de las Estaciones del Año en México</h2>
+	<nav>
+		<ul class="menu">
+			<li>
+				<b>Primavera</b>
+				<ul class="submenu">
+					<li>Abril</li>
+					<li>Mayo</li>
+					<li>Junio</li>
+				</ul>
+			</li>
+			<li>
+				<b>Verano</b>
+				<ul class="submenu">
+					<li>Julio</li>
+					<li>Agosto</li>
+					<li>Septiembre</li>
+				</ul>
+			</li>
+			<li>
+				<b>Otoño</b>
+				<ul class="submenu">
+					<li>Octubre</li>
+					<li>Noviembre</li>
+					<li>Diciembre</li>
+				</ul>
+			</li>
+			<li>
+				<b>Invierno</b>
+				<ul class="submenu">
+					<li>Enero</li>
+					<li>Febrero</li>
+					<li>Marzo</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+</html>

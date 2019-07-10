@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Data Atributtes</title>
+	<style>
+		.social-media a {
+			text-decoration: none;
+		}
+
+		.social-media a:hover:after {
+			content: attr(data-seguidores);
+			margin-left: 8px;
+			background-color: #F60;
+			color: #FFF;
+			border-radius: 4px;
+			padding: 4px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Data Atributtes</h1>
+	<h2>Redes Socailes de Bextlán</h2>
+	<ul class="social-media">
+		<li>
+			<a href="https://www.youtube.com/bextlancom" target="_blank" data-seguidores="23653">YouTube</a>
+		</li>
+		<li>
+			<a href="https://www.facebook.com/bextlan" target="_blank" data-seguidores="5238">Facebook</a>
+		</li>
+		<li>
+			<a href="https://twitter.com/bextlan" target="_blank" data-seguidores="2351">Twitter</a>
+		</li>
+	</ul>
+	<script>
+		var smFollowers = document.querySelectorAll('a');
+		console.log(
+			smFollowers,
+			smFollowers[0].dataset,
+			smFollowers[1].dataset,
+			smFollowers[2].dataset
+		)
+	</script>
+</body>
+</html>

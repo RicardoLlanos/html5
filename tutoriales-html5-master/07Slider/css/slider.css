@@ -1,0 +1,32 @@
+html {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+@keyframes carrusel-infinito {
+	0%, 12.5% { background-image: url(../img/Semantics.png); }
+
+	12.5%, 25% { background-image: url(../img/Offline_Storage.png); }
+
+	25%, 37.5% { background-image: url(../img/Device_Access.png); }
+
+	37.5%, 50% { background-image: url(../img/Connectivity.png); }
+
+	50%, 62.5% { background-image: url(../img/Multimedia.png); }
+
+	62.5%, 75% { background-image: url(../img/3D_Effects.png); }
+
+	75%, 87.5% { background-image: url(../img/Performance.png); }
+
+	87.5%, 100% { background-image: url(../img/Styling.png); }
+}
+
+.slider {
+	margin: auto;
+	height: 512px;
+	width: 512px;
+	background: url(../img/Semantics.png) no-repeat center;
+	background-size: contain;
+	-webkit-animation: carrusel-infinito 20s infinite 2s alternate ease-out;
+	animation: carrusel-infinito 20s infinite 2s alternate ease-out;
+}
